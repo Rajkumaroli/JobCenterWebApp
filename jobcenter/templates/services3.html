@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Services{% endblock title %}
+{% block services3 %}
+{% load static %}
+<div class="container-fluid bg-success p-2 text-dark bg-opacity-10">
+    <div class="row py-5 px-5">
+        <div class="col-5">
+            <h4>Why Advertisement at JobCenter ?</h4><br/>
+            <ul>
+                <li>JobsCenter is Nepal’s pioneer job and career portal. The number of daily visitor in our website is over 10,000 and is increasing.</li>
+                <li>Advertisement with JobsNepal is much affordable. It is ideal for the companies like yours who have large target customers.</li>
+                <li>Creating an ad campaign with jobs Nepal can be incredibly powerful for your business.</li>
+                <li>The site consistently ranks highly on search engine like Google, under the key phrase “JobsCenter”.</li>
+            </ul>
+        </div>
+        <div class="col-6 px-5">
+            <img src="{% static 'images/s3.jpg' %}" width="550vh" height="330vh" alt="Images">
+        </div>
+    </div>
+</div>
+
+{% endblock services3 %}

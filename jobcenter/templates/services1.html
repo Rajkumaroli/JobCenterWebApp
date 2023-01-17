@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Services{% endblock title %}
+{% block services1 %}
+{% load static %}
+<div class="container-fluid bg-primary text-white">
+    <div class="row py-5 px-5">
+        <div class="col-5">
+            <h4>Direct Recruitment</h4><br/>
+            <p>JobsCenter.com has been providing direct recruitment services since its inception.
+                The purpose of this procedure is to identify the direct recruitment and selection process for employing staffs at your esteemed organization. By choosing JCDC (JobCenter.com) as your staffing firm, we can help your organization decrease the time associated with the recruiting process by placing the right employee, in a short span of time.
+                The phases involved in selection process are:</p>
+        </div>
+        <div class="col-6 px-5">
+            <img src="{% static 'images/a1.jpeg' %}" width="550vh" height="380vh" alt="Images">
+        </div>
+    </div>
+</div>
+
+<div class="container py-5 .bg-light.bg-gradient ">
+    <h4>Direct Recruitment Process</h4>
+    <div class="row">
+        <ul class="px-5">
+            <li>Customer Analysis – JobCenter shall profile your company to understand your business needs and determine the services that will make your staffing process more efficient and effective.</li>
+            <li>Sourcing – The professional recruiters at JNDC shall quickly identify the most qualified candidates using their industry knowledge and the extensive networks of our staffing sources.</li>
+            <li>Screening - At JobCenter, we get to know each candidate beyond their resume. We find out the skills and qualities that will achieve the perfect fit for your position.</li>
+            <li>Selection - To complete the hiring process, we ensure all forms, screening and certifications are verified Selection before the employee joins the office.</li>
+            <li>Performance Monitoring - We continually monitor our performance and the performance of our employees to make sure you are continually satisfied with our service.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="container bg-success p-2 text-dark bg-opacity-25">
+    <h4 class="text-center pt-3">JobCenter services and obligations</h4>
+    <h6 class="p-3">JobCenter undertakes the contingent search, i.e. the selection and recruitment of candidates for required positions at the organization. Prior to recommending any candidate for a vacancy, JNDC will have assessed the proposed candidate´s suitability at least once in a personal interview before drawing up a comprehensive file (description of the candidate, a copy of the candidate´s personally drawn up curriculum vitae, all certificates, diplomas and other documents of importance for the application). The organization may also act independently to fill the relevant position and bring in other recruitment agencies. The organization has no obligation to enter into an employment contract with any candidate proposed by JNDC. All introduction and applicant details are confidential and are supplied to the Organization on the understanding that the information will be kept confidential and not disclose it to any third party without the JobCenter’s prior written consent.</h6>
+</div>
+
+{% endblock services1 %}

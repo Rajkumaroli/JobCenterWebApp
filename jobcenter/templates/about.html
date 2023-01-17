@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}About US{% endblock title %}
+{% block about %}
+{% load static %}
+<div class="container-fluid bg-primary text-white">
+    <div class="row py-5 px-5">
+        <div class="col-5">
+            <h4>Welcome to the JobsCenter.com</h4><br/>
+            <p>Welcome to JobsCenter.com, the largest locally focused employment website in the nation! Our mission is to lead the Internet employment industry in Nepal by providing innovative information, superior resume management software and a comprehensive selection of services.<br/><br/>
+                Jobscenter.com offers services to the recruiting and job-seeking community in Nepal. We are the only recruitment service provider with 100% free service to all the jobseekers.
+                It is our mission to bring the burgeoning Nepalese Internet and computing talent to bear on international Web development.
+                Jai Nepal!</p>
+        </div>
+        <div class="col-6 px-5">
+            <img src="{% static 'images/a1.jpeg' %}" width="550vh" height="380vh" alt="Images">
+        </div>
+    </div>
+</div>
+<div class="container-fluid pt-3">
+    <h3 class="py-2 text-center">Our Services<hr/></h3>
+    <div class="row  gap-5">
+        <div class="col-1"></div>
+        <div class="col-3 border border-primary p-4 text-center shadow-lg py-5  mb-5 bg-success rounded text-white">
+            <h4 class="text-center">Direct Recuitment</h4>
+            <h6>The purpose of this procedure is to identify the direct recruitment and selection process for employing staffs a...</h6>
+           <a href="#"> <button class="btn btn-light text-center my-3">Explore</button></a>
+        </div>
+        <div class="col-3 border border-primary p-4 text-center shadow-lg py-5  mb-5 bg-success rounded text-white">
+            <h4 class="text-center">Vacancy Announcement</h4>
+            <h6>JobsCenter vacancy announcements are the means by which an organization advertises its vacancies on our...
+            </h6>
+           <a href="#"> <button class="btn btn-light text-center my-3">Explore</button></a>
+        </div>
+        <div class="col-3 border border-primary p-4 text-center shadow-lg py-5  mb-5 bg-success rounded text-white">
+            <h4 class="text-center">Banner Advertisement</h4>
+            <h6>Online website banner ads provide an instant global reach at relatively low cost. You have the opportunity to capture the attentio...</h6>
+           <a href="#"> <button class="btn btn-light text-center my-3">Explore</button></a>
+        </div>
+    </div>
+</div>
+{% endblock about %}

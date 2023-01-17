@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Services{% endblock title %}
+{% block services2 %}
+{% load static %}
+<div class="container-fluid bg-primary text-white">
+    <div class="row py-5 px-5">
+        <div class="col-5">
+            <h4>Vacancy Announcement</h4><br/>
+            <p>JobCenter vacancy announcements are the means by which an organization advertises its vacancies on our website JobsCenter for potential applicants about position being advertised.
+                There is no general format for vacancy announcements: each organization creates and manages announcements independently, so applicants should carefully review each section.</p>
+        </div>
+        <div class="col-6 px-5">
+            <img src="{% static 'images/s2.jpeg' %}" width="550vh" height="330vh" alt="Images">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row py-5 px-5 gap-3">
+        <div class="col-6 px-5">
+            <img src="{% static 'images/s2.jpeg' %}" width="500vh" height="330vh" alt="Images">
+        </div>
+        <div class="col-5">
+            <h4>Why JobsCenter ?</h4><br/>
+           <ul>
+            <li>Keep profile of your company/organization and post your job vacancies.</li>
+            <li>Search for suitable candidates among resume posters by qualification, experience and expertise.</li>
+            <li>More than 15,000 genuine companies are using JobCenter as a reliable job portal to hire candidates.</li>
+            <li>Branding for employers with elite and Customized Page.</li>
+            <li>More than 10,000 visitors use JobCenter daily.</li> 
+            <li>We have a comprehensive database of 1,00,000+ candidates.</li>
+           </ul>
+        </div> 
+    </div>
+</div>
+
+
+
+{% endblock services2 %}
