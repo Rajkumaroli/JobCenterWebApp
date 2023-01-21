@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Login - JobCenter{% endblock title %}
+{% block login %}
+<div class="container-fluid bg-success p-5 text-dark bg-opacity-50">
+    <h2 class="text-center pt-5">Login to your account<hr/></h2>
+    <div class="row px-5">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form action="/login/" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock login %}

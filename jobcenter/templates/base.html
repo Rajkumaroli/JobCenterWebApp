@@ -61,7 +61,7 @@
         </ul>
         <!-- Button... -->
         <div class="btn-group px-5" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-success">LOG IN</button>
+         <a href="{% url 'login' %}"> <button type="button" class="btn btn-success">LOG IN</button></a>
 
           <div class="btn-group" role="group">
             <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
@@ -69,8 +69,8 @@
               SIGN UP
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Register JobSeeker</a></li>
-              <li><a class="dropdown-item" href="#">Register Company</a></li>
+              <li><a class="dropdown-item" href="{% url 'signup' %}">Register JobSeeker</a></li>
+              <li><a class="dropdown-item" href="{% url 'signup1' %}">Register Company</a></li>
             </ul>
           </div>
         </div>
@@ -87,10 +87,16 @@
   {% block services3 %}{% endblock services3 %}
   {% block help %}{% endblock help %}
   {% block contact %}{% endblock contact %}
+  {% block login %}{% endblock login %}
+  {% block signup %}{% endblock signup %}
+  {% block signup1 %}{% endblock signup1 %}
+  {% block popular %}{% endblock popular %}
+  {% block fulltime %}{% endblock fulltime %}
+  {% block parttime %}{% endblock parttime %}
   
 
   <!-- Top Footer...... -->
-  <div class="container-fluid px-5 bg-dark mt-5 py-3 text-white-50">
+  <div class="container-fluid px-5 bg-dark py-3 text-white-50">
     <div class="row text-warning">
       <div class="col-6">Jobs by Categories
         <hr />

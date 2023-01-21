@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block title %}Signup - JobsCenter{% endblock title %}
+
+{% block signup1 %}
+{% if messages %}
+{% for message1 in messages%}
+<div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+  <strong>Message: </strong> {{message1}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+<div class="container-fluid bg-success p-5 text-dark bg-opacity-50">
+    <h2 class="text-center pt-5">JobCenter Registration
+        <hr />
+    </h2>
+    <div class="row px-5">
+        <div class="col-12">
+            <form action="/signup1/" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <h5>Login Informations</h5>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" name="email1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password1">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Retype Email Address</label>
+                            <input type="email" class="form-control" name="email2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Retype Password</label>
+                            <input type="password" class="form-control" name="password2">
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>Company Information</h5>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" name="cname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Choose Company Industry</label>
+                            <input type="text" class="form-control" name="cindustry">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Location</label>
+                            <input type="text" class="form-control" name="location">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Primary Phone Number</label>
+                            <input type="text" class="form-control" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">City</label>
+                            <input type="text" class="form-control" name="city">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>Contact Person Details</h5>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Contact Person Name</label>
+                            <input type="text" class="form-control" name="cpname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+                            <input type="text" class="form-control" name="cpmobile">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Contact Person Email</label>
+                            <input type="email" class="form-control" name="cpemail">
+                        </div>
+                
+                       
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock signup1 %}
